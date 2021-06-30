@@ -3,7 +3,6 @@ import {RouterModule, Routes} from '@angular/router';
 import {PlacesComponent} from "./components/places/places.component";
 import {MapComponent} from "./components/map/map.component";
 import {AboutComponent} from "./components/about/about.component";
-import {LoginComponent} from './components/login/login.component';
 import {HomeComponent} from "./components/home/home.component";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {RegisterComponent} from "./components/register/register.component";
@@ -25,10 +24,6 @@ const routes: Routes = [
   {
     path: 'map',
     component: MapComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
   },
   {
     path: 'about',

@@ -1,25 +1,28 @@
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="['/', 'home']">FOTOLANDER</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto mx-auto">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" [routerLink]="['/', 'places']">PLACES</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" [routerLink]="['/', 'map']">MAP</a>
         </li>
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link active" aria-current="page" [routerLink]="['/', 'login']">LOGIN</a>-->
+<!--        </li>-->
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/', 'login']">LOGIN</a>
+          <a class="nav-link active" style="cursor: pointer;" data-bs-toggle="modal"  data-bs-target="#modal" aria-current="page">LOGIN</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" [routerLink]="['/', 'about']">ABOUT</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             LANGUAGE
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -31,6 +34,32 @@
     </div>
   </div>
 </nav>
+
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <input type="email" placeholder="Email address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" >Login</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" [routerLink]="['/', 'register']">Register</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <router-outlet></router-outlet>
