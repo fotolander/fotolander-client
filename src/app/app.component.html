@@ -12,9 +12,6 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" [routerLink]="['/', 'map']">MAP</a>
         </li>
-<!--        <li class="nav-item">-->
-<!--          <a class="nav-link active" aria-current="page" [routerLink]="['/', 'login']">LOGIN</a>-->
-<!--        </li>-->
         <li class="nav-item">
           <a class="nav-link active" style="cursor: pointer;" data-bs-toggle="modal"  data-bs-target="#modal" aria-current="page">LOGIN</a>
         </li>
@@ -22,12 +19,12 @@
           <a class="nav-link active" aria-current="page" [routerLink]="['/', 'about']">ABOUT</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            LANGUAGE
+          <a class="nav-link dropdown-toggle small" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            LANG
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">english</a></li>
-            <li><a class="dropdown-item" href="#">polski</a></li>
+            <li><a class="dropdown-item small" href="#"><img src="/assets/an.png" alt="" width="20" height="20" class="d-inline-block"> eng</a></li>
+            <li><a class="dropdown-item small" href="#"><img src="/assets/pl.png" alt="" width="20" height="20" class="d-inline-block"> pol</a></li>
           </ul>
         </li>
       </ul>
@@ -35,8 +32,8 @@
   </div>
 </nav>
 
-<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade" id="modal" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Login</h5>
