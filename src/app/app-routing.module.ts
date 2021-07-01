@@ -6,6 +6,7 @@ import {AboutComponent} from "./components/about/about.component";
 import {HomeComponent} from "./components/home/home.component";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {RegisterComponent} from "./components/register/register.component";
+import {PlaceItemComponent} from "./components/place-item/place-item.component";
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'places',
     component: PlacesComponent
+  },
+  {
+    path: 'places/all/:name',
+    component: PlaceItemComponent
   },
   {
     path: 'map',
