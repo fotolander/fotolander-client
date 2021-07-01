@@ -12,6 +12,8 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
+import { PlaceItemComponent } from './components/place-item/place-item.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -22,10 +24,12 @@ import { RegisterComponent } from './components/register/register.component';
     HomeComponent,
     PageNotFoundComponent,
     RegisterComponent,
+    PlaceItemComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
     GoogleMapsModule,

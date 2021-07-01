@@ -1,0 +1,10 @@
+<button class="btn btn-danger mb-2" [routerLink]="['/', 'places']">Back to places</button>
+
+<div class="card mb-1">
+  <div class="card-body">
+    <h5 class="card-title">{{place.name}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Adres: {{place.address}}, województwo: {{place.voivodeship}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">Współrzędne geograficzne: dł. {{place.longitude}}, szer. {{place.latitude}}</h6>
+    <p class="card-text">{{place.description}}</p>
+  </div>
+</div>
