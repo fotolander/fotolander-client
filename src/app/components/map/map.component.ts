@@ -59,6 +59,8 @@ export class MapComponent implements OnInit {
 
   constructor(private map: MapService) { }
 
+
+
   ngOnInit() {
     this.map.buildMap()
   }
