@@ -2,11 +2,15 @@
 /*  height: 900px;*/
 /*}*/
 
-.map-container {
-  width: 80%;
-  height: 80%;
-  position: absolute;
-  right: 80px;
-  left: 120px;
+/*.map-container {*/
+/*  width: 80%;*/
+/*  height: 80%;*/
+/*  position: absolute;*/
+/*  right: 80px;*/
+/*  left: 120px;*/
 
+agm-map {
+  height: 600px;
 }
+
+/*}*/
