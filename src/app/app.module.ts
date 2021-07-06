@@ -14,6 +14,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { RegisterComponent } from './components/register/register.component';
 import { PlaceItemComponent } from './components/place-item/place-item.component';
 import {HttpClientModule} from "@angular/common/http";
+import { UploadPicturesComponent } from './components/upload-pictures/upload-pictures.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {HttpClientModule} from "@angular/common/http";
     HomeComponent,
     PageNotFoundComponent,
     RegisterComponent,
-    PlaceItemComponent
+    PlaceItemComponent,
+    UploadPicturesComponent
   ],
   imports: [
     BrowserModule,

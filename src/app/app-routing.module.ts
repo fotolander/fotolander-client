@@ -7,6 +7,7 @@ import {HomeComponent} from "./components/home/home.component";
 import {PageNotFoundComponent} from "./components/page-not-found/page-not-found.component";
 import {RegisterComponent} from "./components/register/register.component";
 import {PlaceItemComponent} from "./components/place-item/place-item.component";
+import {UploadPicturesComponent} from "./components/upload-pictures/upload-pictures.component";
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'upload-pictures',
+    component: UploadPicturesComponent
   },
   {
     path: '**',
