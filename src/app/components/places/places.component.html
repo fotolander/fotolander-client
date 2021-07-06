@@ -1,12 +1,15 @@
-<div *ngFor="let place of places">
-  <div class="card mb-1">
-    <div class="card-body">
-      <h5 class="card-title">{{place.name}}</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Adres: {{place.address}}, województwo: {{place.voivodeship}}</h6>
-      <p class="card-text">{{place.description}}</p>
-      <button class="btn btn-info" (click)="onGoToThisPlace(place.name)">
-        Go to place
-      </button>
+<div class="card-deck">
+  <div *ngFor="let place of places">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="assets/foto/2img.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{place.name}}</h5>
+        <p class="card-text">Opis: {{place.description}}</p>
+        <p class="card-text">Adres: {{place.address}}, województwo: {{place.voivodeship}}</p>
+        <button class="btn btn-secondary" (click)="onGoToThisPlace(place.name)">
+          Read more
+        </button>
+      </div>
     </div>
   </div>
 </div>

@@ -15,8 +15,14 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" aria-current="page" [routerLink]="['/', 'places']">PLACES</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fw-bold" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PLACES
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item small" href="#" [routerLink]="['/', 'places']">SHOW PLACES</a></li>
+            <li><a class="dropdown-item small" href="#" [routerLink]="['/', 'places/add']">ADD PLACE</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link active fw-bold" aria-current="page" [routerLink]="['/', 'map']">MAP</a>
@@ -30,17 +36,7 @@
         <li class="nav-item">
           <a class="nav-link active fw-light" style="cursor: pointer;" data-bs-toggle="modal"  data-bs-target="#modalLogin" aria-current="page">LOGIN</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle small" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            LANG
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" ><img src="/assets/an.png" alt="" width="20" height="20" class="d-inline-block"> eng</a></li>
-            <li><a class="dropdown-item" ><img src="/assets/pl.png" alt="" width="20" height="20" class="d-inline-block"> pol</a></li>
-          </ul>
-        </li>
       </ul>
-
     </div>
   </div>
 </nav>
